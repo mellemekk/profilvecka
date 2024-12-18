@@ -10,17 +10,18 @@ body{
 }
 .app{
     position: relative;
-    left: 42vw;
-    top: 17vh;
+    left: 38vw;
+    top: 10vh;
     border: 10px solid darkblue;
     border-radius: 20px;
     background: white;
-    width: 20vw;
+    width: 30vw;
 }
 #question{
     border: 6px solid darkblue;
     border-radius: 20px;
     width: fit-content;
+    height: fit-content;
     margin: 20px;
     padding: 10px;
     background-color: white;
@@ -29,7 +30,7 @@ body{
     border: 6px solid darkblue;
     background: white; 
     width: fit-content;
-    height: fit-content;
+    height: 200px;
     position: static;
 }
 #answer-buttons{
@@ -37,6 +38,7 @@ body{
     flex-direction: column;
     align-items: flex-start;
     width: fit-content;
+    gap: 10px;
     padding: 10px;
     margin: 20px;
     
@@ -49,10 +51,38 @@ body{
     box-sizing: border-box;
 }
 .btn{
-    background-color: white;
-    font-weight: 600;
+    background-color: darkblue;
+    color: white;
+    font-weight: 500;
     font-size:20px;
+    transition: all;
+    border-radius: 5px;
 }
 .btn:hover{
-    background: rgba(171, 169, 185, 0.894);
+    background: black;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.correct{
+    background-color: green;
+}
+.incorrect{
+    background-color: red;
+}
+.correct:hover{
+    background-color: green;
+}
+.incorrect:hover{
+    background: red;
+}
+#next-btn{
+    background: white;
+    color: darkblue;
+    font-weight: 400;
+    width: 100px;
+    margin: 5px 70% 5px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
 }

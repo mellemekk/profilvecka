@@ -1,6 +1,12 @@
 
 const questions = [
     {
+        question: "lebonbon jahames quiz",  
+        answers:[
+            { text: "starta quizzzz", correct: true}
+        ]
+    },
+    {
         question: "whjo is my sunshine",  
         answers: [
             { text: "majkel jådan", correct: false}, 
